@@ -47,6 +47,15 @@ namespace ConsoleApp1
             }
             Console.ReadKey();
         }
+        static double Celsius(double j)
+        {
+            return (5 * (j - 32)) / 9;
+        }
+
+        static double Fahre(double i)
+        {
+            return ((9 * i) / 5) + 32;
+        }
         static void Main(string[] args)
         {
             Console.Title = "procedimientos y funciones";
@@ -62,9 +71,13 @@ namespace ConsoleApp1
                 Console.WriteLine("[4] multiplicasion de dos numeros");
                 Console.WriteLine("[5] division de dos numeros");
                 Console.WriteLine("[6] division de dos numeros");
+                Console.WriteLine("[7] conversion  de celsius");
+                Console.WriteLine("[8] conversion de fare");
                 Console.WriteLine("[0] salir ");
                 Console.WriteLine("Ingrese una opcion y de enter");
                 opcion = Console.ReadLine();
+                double i;
+                double j;
                 switch (opcion)
                 {
                     case "1":
@@ -106,6 +119,18 @@ namespace ConsoleApp1
                     case "6":
                         Console.WriteLine("calculando");
                         Primo();
+                        break;
+                    case "7":
+                        Console.WriteLine("Ingrese el valor de Fahrenheit");
+                        j = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("El valor de Fahren es {0} por lo cual el valor de Celsius es {1}", j, Celsius(j));
+                        Console.ReadKey();
+                        break;
+                    case "8":
+                        Console.WriteLine("Ingrese el valor de Celsius");
+                        i = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("El valor de Celsius es {0} por lo cual el valor de Fahrenheit es {1}", i, Fahre(i));
+                        Console.ReadKey();
                         break;
                 }
                 Console.ReadKey();
