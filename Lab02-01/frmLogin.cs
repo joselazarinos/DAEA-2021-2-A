@@ -16,12 +16,25 @@ namespace Lab02_01
         {
             InitializeComponent();
         }
+        string usuario = "josefernando";
+        string contraseña = "940895428";
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-            PrincipalMDI principal = new PrincipalMDI();
-            principal.Show();
-            this.Hide();
+            string user = txtUsuario.Text;
+            string password = txtPassword.Text;
+            if (user.Equals(usuario))
+            {
+                if (password.Equals(contraseña))
+                {
+                    MessageBox.Show("Login exitoso");
+                    PrincipalMDI principal = new PrincipalMDI();
+                    principal.Show();
+                    this.Hide();
+                }
+                
+            }
+            
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
