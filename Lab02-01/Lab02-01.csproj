@@ -52,6 +52,24 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="manCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manCategorias.Designer.cs">
+      <DependentUpon>manCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManProductos.Designer.cs">
+      <DependentUpon>ManProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manProveedores.Designer.cs">
+      <DependentUpon>manProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="manUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manCategorias.resx">
+      <DependentUpon>manCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManProductos.resx">
+      <DependentUpon>ManProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manProveedores.resx">
+      <DependentUpon>manProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manUsuario.resx">
       <DependentUpon>manUsuario.cs</DependentUpon>
