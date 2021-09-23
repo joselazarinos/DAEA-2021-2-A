@@ -13,7 +13,7 @@ namespace Lab03
 {
     public partial class frmConDB : Form
     {
-        SqlConnection conn;
+        public SqlConnection conn;
         public frmConDB()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace Lab03
 
         private void frmConDB_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnConectar_Click(object sender, EventArgs e)
