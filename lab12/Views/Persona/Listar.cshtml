@@ -1,7 +1,29 @@
-﻿
+﻿@model List<lab12.Models.Persona>
 @{
     ViewBag.Title = "Listar";
 }
 
-<h2>Listar</h2>
+<h2>Listado de Personas</h2>
+
+<table>
+    <tr>
+        <th>PersonaID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Fecha Nac.</th>
+        <th>Direccion</th>
+        <th>Email</th>
+    </tr>
+        @foreach (var persona in Model)
+            {
+            <tr>
+                 <td>@persona.PersonaID</td>
+                 <td>@persona.Nombre</td>
+                 <td>@persona.Apellido</td>
+                 <td>@persona.FechaNac</td>
+                 <td>@persona.Direccion</td>
+                 <td>@persona.Email</td>
+            </tr>
+            }
+</table>
 
