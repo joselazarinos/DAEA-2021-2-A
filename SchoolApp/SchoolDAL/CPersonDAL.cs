@@ -3,10 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SchoolEntities;
 
 namespace SchoolDAL
 {
-    public class Class1
+    public class CPersonDAL
     {
+        public List<CPerson> Listar()
+        {
+            using (SchoolEntities contexto = new SchoolEntities())
+            {
+                var query = contexto.Person.Select(p => new CPerson
+                {
+                    PersonID = p.PersonID,
+                    LastName = p.LastName,
+                    FirstName = p.FirstName
+                });
+                return query.ToList();
+            }
+        }
     }
 }
