@@ -1,7 +1,28 @@
-﻿
+﻿@model lab13.Models.Persona
 @{
     ViewBag.Title = "Mostrar";
 }
 
-<h2>Mostrar</h2>
+<h2>Mostrar Persona</h2>
 
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.PersonaID)
+    @Html.TextBoxFor(model => model.PersonaID)
+    <br />
+    @Html.LabelFor(model => model.Nombre)
+    @Html.TextBoxFor(model => model.Nombre)
+    <br />
+    @Html.LabelFor(model => model.Apellido)
+    @Html.TextBoxFor(model => model.Apellido)
+    <br />
+    @Html.LabelFor(model => model.FechaNac)
+    @Html.TextBoxFor(model => model.FechaNac)
+    <br />
+    @Html.LabelFor(model => model.Direccion)
+    @Html.TextBoxFor(model => model.Direccion)
+    <br />
+    @Html.LabelFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Email)
+    
+}
