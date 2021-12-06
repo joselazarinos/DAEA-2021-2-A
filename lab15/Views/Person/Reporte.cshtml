@@ -1,0 +1,21 @@
+﻿@using ReportViewerForMvc;
+@model lab15_Reportes.Models.person
+@{
+    ViewBag.Title = "Reporte de persona";
+}
+
+<h2>Reporte de personas</h2>
+@using (Html.BeginForm("Reporte", "Persona", FormMethod.Post))
+            {
+                <p>Nombre: @Html.TextBox("nombre" )/></p>
+            }
+@if (ViewBag.ReportViewwer != null)
+            {
+                @Html.ReportViewer(ViewBag.ReportViewer as
+               Microsoft.Reporting.WebForms.ReportViewer)
+            }
+<style>
+    iframe {
+        border-width: 0;
+    }
+</style>
